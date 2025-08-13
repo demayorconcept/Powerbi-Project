@@ -32,10 +32,13 @@ this is a fully-fledge powerbi project. The skill demonstrated is as follows:
 ## Data collection
 The relevant data is collected from the company internal database in which the tables involve are:
 customers,orders,packages,company,companyusers,ridertag tables
-![]()
+
+![](Table.png)
 
 ## Data cleaning
-The 
+The data cleaning process was performed basically on package table referencing only the pickup city and delivery city 
+and the cleaning was performed to some cities that are outside nigeria because of the company restriction to foreign shipment
+![]()
 ## Data transformation
 ## Data modelling 
 ## Data Measures
