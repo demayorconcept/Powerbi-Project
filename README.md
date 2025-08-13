@@ -37,8 +37,11 @@ customers,orders,packages,company,companyusers,ridertag tables
 
 ## Data cleaning
 The data cleaning process was performed basically on package table referencing only the pickup city and delivery city 
-and the cleaning was performed to some cities that are outside nigeria because of the company restriction to foreign shipment
+and the cleaning was performed to some cities that are outside nigeria because of the company restriction to foreign shipments
+
 ![]()
+
+
 ## Data transformation
 ## Data modelling 
 ## Data Measures
