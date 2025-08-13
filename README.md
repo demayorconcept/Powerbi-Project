@@ -35,16 +35,66 @@ customers,orders,packages,company,companyusers,ridertag tables
 
 ![](Table.png)
 
-## Data cleaning
+## Data cleaning and data transformation
 The data cleaning process was performed basically on package table referencing only the pickup city and delivery city 
 and the cleaning was performed to some cities that are outside nigeria because of the company restriction to foreign shipments
 
-![]()
+![](PickupCity.png)
 
+![](DeliveryCity.png)
 
-## Data transformation
 ## Data modelling 
+The data modelling process was performed basically among 18 dimension tables and 1 factable 
+
+![](Modelling.png)
+
+## Data Visualisation
+Order Analysis
+this indicated total orders booked by customers between january to july 2025
+![](Overview.png)
+
+Customers Analysis
+this indicated customers that used our services between between january to july 2025
+![](Customers.png)
+
+Riders Analysis
+this indicated riders that executed completed orders between between january to july 2025
+![](Riders.png)
+
+Month Over Month Analysis 
+this indicated our monthly orders performance
+![](MoM.png)
+
 ## Data Measures
+The key primary indicators is used to track the performance of the business overtime. this furthermore reveals the general strength and weakness
+of the business. however the KPIs are calculated in data analysis expresssion (Dax) such as:
+-Average order value
+AOV = AVERAGE(FactLogisticsDatas[OrderPrice])
+-Gross merchandise value
+GMV = sum(FactLogisticsDatas[OrderPrice])
+-Interstate AOV
+InterAOV = CALCULATE([AOV],DimOrderMode[OrderMode ID] = 2)
+-Intrastate AOV
+IntraAOV = CALCULATE([AOV],DimOrderMode[OrderMode ID] = 1)
+-Revenue 
+Revenue = SUM(FactLogisticsDatas[CommissionPrice])
+-TotalOrders
+TotalOrder = COUNTROWS(FactLogisticsDatas)
+-CompletedShipment 
+Completed Shipment = CALCULATE([TotalOrder],FILTER(FactLogisticsDatas,FactLogisticsDatas[OrderStatus ID] = 1))
+-Failed Delivery Rate(%)
+FailedDeliver% = DIVIDE([FailedDeliver],[TotalDeliveries])
+-Ontime Delivery Rate(%)
+OntimeDelivery% = DIVIDE([OntimeDeliver],[TotalDeliveries]
+-Failed Pickup Rate(%)
+FailedPickup% = DIVIDE([FailedPickup],[TotalPickup])
+-Ontime Pickup Rate(%)
+OntimePickup% = DIVIDE([OntimePickup],[TotalPickup])
+
 ## Recommendations and conclusion
-## support decision-making
+1. The company should focus more on customers that booked large volume of orders for customers retention rate
+2. the company should focus on how they can improve on ontime effective delivery and ontime effective pickup
+3. the company should focus on customers generating the most revenue
+4. the company should focus on state with the most shipment
+
 
