@@ -19,7 +19,7 @@ shaped my data analyst journey as a junior data analsyt. furthermore the aim and
 13. Calculate the delivery compliance with respect to failed delivery rate and ontime delivery rate.ng
 
 ## Skills / Concepts demonstrated
-The skill demonstrated is as follows:
+this is a fully-fledge powerbi project. The skill demonstrated is as follows:
 - page navigation
 - button
 - filter
@@ -30,8 +30,12 @@ The skill demonstrated is as follows:
 - quick measures
 
 ## Data collection
+The relevant data is collected from the company internal database in which the tables involve are:
+customers,orders,packages,company,companyusers,ridertag tables
+![]()
 
 ## Data cleaning
+The 
 ## Data transformation
 ## Data modelling 
 ## Data Measures
