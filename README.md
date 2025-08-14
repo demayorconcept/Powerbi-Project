@@ -44,11 +44,15 @@ and the cleaning was performed to some cities that are outside nigeria because o
 ![](DeliveryCity.png)
 
 ## Data modelling 
-The data modelling process was performed basically among 18 dimension tables and 1 factable 
+The model use is star schema.
+The data modelling process was performed basically among 18 dimension tables and 1 factable and was joined with one to many relationship
 
 ![](Modelling.png)
 
 ## Data Visualisation
+The response and interactive of the visualization is displayed.
+[here](https://app.powerbi.com/groups/me/reports/5332e05c-5f8c-4421-9d81-f34e5e7d44f7/4a92155ba92a0a8e01b8?experience=power-bi)
+
 Order Analysis
 this indicated total orders booked by customers between january to july 2025
 ![](Overview.png)
